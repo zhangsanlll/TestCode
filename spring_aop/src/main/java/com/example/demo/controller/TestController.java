@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 
+import com.example.demo.aspect.MyAspect;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,6 +37,8 @@ public class TestController {
         int a = 10 / 0;
         return true;
     }
+
+    @MyAspect
     @RequestMapping("/t5")
     public String  t5(){
         return "true";
