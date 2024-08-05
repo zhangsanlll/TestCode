@@ -19,15 +19,15 @@ class BlogInfoMapperTest {
 
     @Test
     void selectById() {
-        System.out.println(blogInfoMapper.selectById(1));
+        System.out.println(blogInfoMapper.selectById(2));
     }
 
     @Test
     void updateById() {
         BlogInfo blogInfo = new BlogInfo();
-        blogInfo.setId(1);
-        blogInfo.setTitle("111");
-        blogInfo.setContent("llllll");
+        blogInfo.setId(4);
+        blogInfo.setTitle("333");
+        blogInfo.setContent("333");
         blogInfo.setDeleteFlag(0);
         blogInfoMapper.updateBlog(blogInfo);
 

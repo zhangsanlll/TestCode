@@ -1,111 +1,618 @@
-2024-08-04T16:37:28.158+08:00  INFO 6544 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 6544 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T16:37:28.162+08:00  INFO 6544 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T16:37:29.060+08:00  WARN 6544 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
-2024-08-04T16:37:29.532+08:00  INFO 6544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-04T16:37:29.545+08:00  INFO 6544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-04T16:37:29.546+08:00  INFO 6544 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-04T16:37:29.625+08:00  INFO 6544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-04T16:37:29.625+08:00  INFO 6544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1403 ms
-2024-08-04T16:37:30.215+08:00  INFO 6544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-04T16:37:30.223+08:00  INFO 6544 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.564 seconds (process running for 3.138)
-2024-08-04T16:38:13.768+08:00  INFO 6544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-04T16:38:13.769+08:00  INFO 6544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-04T16:38:13.769+08:00  INFO 6544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-08-04T23:11:16.186+08:00  INFO 14648 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Starting UserInfoMapperTest using Java 17.0.11 with PID 14648 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:11:16.187+08:00  INFO 14648 --- [main] c.e.demo.mapper.UserInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:11:17.696+08:00  INFO 14648 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Started UserInfoMapperTest in 1.807 seconds (process running for 2.803)
-2024-08-04T23:11:18.636+08:00  INFO 14648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:11:19.869+08:00  INFO 14648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:11:51.883+08:00  INFO 592 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Starting UserInfoMapperTest using Java 17.0.11 with PID 592 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:11:51.885+08:00  INFO 592 --- [main] c.e.demo.mapper.UserInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:11:53.449+08:00  INFO 592 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Started UserInfoMapperTest in 1.852 seconds (process running for 2.813)
-2024-08-04T23:11:54.268+08:00  INFO 592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:11:55.444+08:00  INFO 592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:12:40.074+08:00  INFO 7748 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Starting UserInfoMapperTest using Java 17.0.11 with PID 7748 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:12:40.075+08:00  INFO 7748 --- [main] c.e.demo.mapper.UserInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:12:41.491+08:00  INFO 7748 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Started UserInfoMapperTest in 1.711 seconds (process running for 2.68)
-2024-08-04T23:12:42.377+08:00  INFO 7748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:12:42.528+08:00  INFO 7748 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c0e4262
-2024-08-04T23:12:42.530+08:00  INFO 7748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:12:42.731+08:00  INFO 7748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:12:42.780+08:00  INFO 7748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:14:17.564+08:00  INFO 14112 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Starting UserInfoMapperTest using Java 17.0.11 with PID 14112 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:14:17.565+08:00  INFO 14112 --- [main] c.e.demo.mapper.UserInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:14:18.900+08:00  INFO 14112 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Started UserInfoMapperTest in 1.613 seconds (process running for 2.517)
-2024-08-04T23:14:19.740+08:00  INFO 14112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:14:19.892+08:00  INFO 14112 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@563843f1
-2024-08-04T23:14:19.894+08:00  INFO 14112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:14:20.100+08:00  INFO 14112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:14:20.107+08:00  INFO 14112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:15:45.886+08:00  INFO 8836 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Starting UserInfoMapperTest using Java 17.0.11 with PID 8836 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:15:45.887+08:00  INFO 8836 --- [main] c.e.demo.mapper.UserInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:15:47.341+08:00  INFO 8836 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Started UserInfoMapperTest in 1.763 seconds (process running for 2.951)
-2024-08-04T23:15:48.161+08:00  INFO 8836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:15:48.314+08:00  INFO 8836 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@545604a9
-2024-08-04T23:15:48.316+08:00  INFO 8836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:15:48.560+08:00  INFO 8836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:15:48.611+08:00  INFO 8836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:15:52.955+08:00  INFO 14060 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Starting UserInfoMapperTest using Java 17.0.11 with PID 14060 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:15:52.956+08:00  INFO 14060 --- [main] c.e.demo.mapper.UserInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:15:54.440+08:00  INFO 14060 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Started UserInfoMapperTest in 1.774 seconds (process running for 2.705)
-2024-08-04T23:15:55.245+08:00  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:15:55.399+08:00  INFO 14060 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c0e4262
-2024-08-04T23:15:55.401+08:00  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:15:55.510+08:00  INFO 14060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:15:55.518+08:00  INFO 14060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:16:26.453+08:00  INFO 12264 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Starting UserInfoMapperTest using Java 17.0.11 with PID 12264 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:16:26.455+08:00  INFO 12264 --- [main] c.e.demo.mapper.UserInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:16:27.952+08:00  INFO 12264 --- [main] c.e.demo.mapper.UserInfoMapperTest       : Started UserInfoMapperTest in 1.808 seconds (process running for 2.764)
-2024-08-04T23:16:28.798+08:00  INFO 12264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:16:28.955+08:00  INFO 12264 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29c25bbc
-2024-08-04T23:16:28.957+08:00  INFO 12264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:16:29.068+08:00  INFO 12264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:16:29.116+08:00  INFO 12264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:24:39.346+08:00  INFO 9800 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 9800 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:24:39.348+08:00  INFO 9800 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:24:40.802+08:00  INFO 9800 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 1.718 seconds (process running for 2.612)
-2024-08-04T23:24:41.625+08:00  INFO 9800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:24:41.790+08:00  INFO 9800 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@563843f1
-2024-08-04T23:24:41.792+08:00  INFO 9800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:24:42.071+08:00  INFO 9800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:24:42.099+08:00  INFO 9800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:27:01.058+08:00  INFO 16836 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 16836 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:27:01.060+08:00  INFO 16836 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:27:02.510+08:00  INFO 16836 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 1.742 seconds (process running for 2.699)
-2024-08-04T23:27:03.400+08:00  INFO 16836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:27:03.568+08:00  INFO 16836 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@563843f1
-2024-08-04T23:27:03.571+08:00  INFO 16836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:27:03.752+08:00  INFO 16836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:27:03.768+08:00  INFO 16836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:28:28.149+08:00  INFO 14952 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 14952 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:28:28.150+08:00  INFO 14952 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:28:29.705+08:00  INFO 14952 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 1.824 seconds (process running for 2.784)
-2024-08-04T23:28:30.599+08:00  INFO 14952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:28:30.767+08:00  INFO 14952 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3add5e17
-2024-08-04T23:28:30.769+08:00  INFO 14952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:28:30.840+08:00  INFO 14952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:28:30.846+08:00  INFO 14952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:29:17.667+08:00  INFO 13120 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 13120 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:29:17.668+08:00  INFO 13120 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:29:19.172+08:00  INFO 13120 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 1.775 seconds (process running for 2.769)
-2024-08-04T23:29:20.042+08:00  INFO 13120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:29:20.200+08:00  INFO 13120 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c8d45cf
-2024-08-04T23:29:20.202+08:00  INFO 13120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:29:20.255+08:00  INFO 13120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:29:20.260+08:00  INFO 13120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:29:48.030+08:00  INFO 6624 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 6624 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:29:48.031+08:00  INFO 6624 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:29:49.474+08:00  INFO 6624 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 1.722 seconds (process running for 2.706)
-2024-08-04T23:29:50.351+08:00  INFO 6624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:29:50.497+08:00  INFO 6624 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ec427
-2024-08-04T23:29:50.499+08:00  INFO 6624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:29:50.559+08:00  INFO 6624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:29:50.566+08:00  INFO 6624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-04T23:30:47.809+08:00  INFO 16684 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 16684 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-04T23:30:47.810+08:00  INFO 16684 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
-2024-08-04T23:30:49.244+08:00  INFO 16684 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 1.701 seconds (process running for 2.656)
-2024-08-04T23:30:50.015+08:00  INFO 16684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-04T23:30:50.164+08:00  INFO 16684 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1218e12
-2024-08-04T23:30:50.166+08:00  INFO 16684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-04T23:30:50.233+08:00  INFO 16684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-04T23:30:50.239+08:00  INFO 16684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T09:55:44.589+08:00  INFO 14292 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 14292 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T09:55:44.597+08:00  INFO 14292 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T09:55:46.535+08:00  INFO 3764 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 3764 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T09:55:46.538+08:00  INFO 3764 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T09:55:47.703+08:00  INFO 14292 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 3.63 seconds (process running for 5.215)
+2024-08-05T09:55:48.873+08:00  INFO 3764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T09:55:48.896+08:00  INFO 3764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T09:55:48.899+08:00  INFO 3764 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T09:55:49.033+08:00  INFO 3764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T09:55:49.034+08:00  INFO 3764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2393 ms
+2024-08-05T09:55:49.528+08:00  INFO 14292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T09:55:49.964+08:00  INFO 14292 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42401b81
+2024-08-05T09:55:49.984+08:00  INFO 14292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T09:55:50.170+08:00  INFO 14292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T09:55:50.217+08:00  INFO 14292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T09:55:50.460+08:00  INFO 3764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T09:55:50.509+08:00  INFO 3764 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 4.747 seconds (process running for 5.347)
+2024-08-05T09:59:16.945+08:00  INFO 3764 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T09:59:16.947+08:00  INFO 3764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T09:59:16.952+08:00  INFO 3764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-05T09:59:17.032+08:00  INFO 3764 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T09:59:17.284+08:00  INFO 3764 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@592aaa9d
+2024-08-05T09:59:17.287+08:00  INFO 3764 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:14:45.068+08:00  INFO 3764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:14:45.081+08:00  INFO 3764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:14:56.852+08:00  INFO 12172 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 12172 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:14:56.856+08:00  INFO 12172 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:14:58.458+08:00  INFO 12172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:14:58.480+08:00  INFO 12172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:14:58.481+08:00  INFO 12172 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:14:58.587+08:00  INFO 12172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:14:58.588+08:00  INFO 12172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1681 ms
+2024-08-05T10:14:59.395+08:00  INFO 12172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:14:59.408+08:00  INFO 12172 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 3.164 seconds (process running for 4.368)
+2024-08-05T10:16:41.101+08:00  INFO 12172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:16:41.103+08:00  INFO 12172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:16:41.107+08:00  INFO 12172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-05T10:16:42.059+08:00  INFO 12172 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:16:42.073+08:00 ERROR 12172 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+jakarta.servlet.ServletException: Circular view path [favicon]: would dispatch back to the current handler URL [/favicon] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-08-05T10:16:42.092+08:00 ERROR 12172 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [favicon]: would dispatch back to the current handler URL [/favicon] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+
+jakarta.servlet.ServletException: Circular view path [favicon]: would dispatch back to the current handler URL [/favicon] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-08-05T10:16:42.638+08:00  INFO 12172 --- [http-nio-8080-exec-10] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7041f669
+2024-08-05T10:16:42.647+08:00  INFO 12172 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:16:51.497+08:00 ERROR 12172 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+jakarta.servlet.ServletException: Circular view path [favicon]: would dispatch back to the current handler URL [/favicon] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-08-05T10:16:51.506+08:00 ERROR 12172 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Circular view path [favicon]: would dispatch back to the current handler URL [/favicon] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)] with root cause
+
+jakarta.servlet.ServletException: Circular view path [favicon]: would dispatch back to the current handler URL [/favicon] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:210) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:148) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-08-05T10:20:31.857+08:00  INFO 12172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:20:31.866+08:00  INFO 12172 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:20:36.441+08:00  INFO 11764 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 11764 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:20:36.444+08:00  INFO 11764 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:20:37.916+08:00  INFO 11764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:20:37.933+08:00  INFO 11764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:20:37.933+08:00  INFO 11764 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:20:38.037+08:00  INFO 11764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:20:38.037+08:00  INFO 11764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1535 ms
+2024-08-05T10:20:38.743+08:00  INFO 11764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:20:38.753+08:00  INFO 11764 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.829 seconds (process running for 3.265)
+2024-08-05T10:20:52.959+08:00  INFO 11764 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:20:52.959+08:00  INFO 11764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:20:52.961+08:00  INFO 11764 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-05T10:20:53.371+08:00  INFO 11764 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:20:53.560+08:00  INFO 11764 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c4faecc
+2024-08-05T10:20:53.562+08:00  INFO 11764 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:22:23.599+08:00  INFO 11764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:22:23.612+08:00  INFO 11764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:22:28.370+08:00  INFO 15708 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 15708 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:22:28.373+08:00  INFO 15708 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:22:29.811+08:00  INFO 15708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:22:29.830+08:00  INFO 15708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:22:29.831+08:00  INFO 15708 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:22:29.930+08:00  INFO 15708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:22:29.930+08:00  INFO 15708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1499 ms
+2024-08-05T10:22:30.623+08:00  INFO 15708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:22:30.631+08:00  INFO 15708 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.807 seconds (process running for 3.238)
+2024-08-05T10:22:35.966+08:00  INFO 15708 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:22:35.967+08:00  INFO 15708 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:22:35.968+08:00  INFO 15708 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T10:22:36.524+08:00  INFO 15708 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:22:36.686+08:00  INFO 15708 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@754f9171
+2024-08-05T10:22:36.688+08:00  INFO 15708 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:23:21.111+08:00  INFO 15708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:23:21.124+08:00  INFO 15708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:23:26.062+08:00  INFO 14160 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 14160 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:23:26.065+08:00  INFO 14160 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:23:27.514+08:00  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:23:27.527+08:00  INFO 14160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:23:27.528+08:00  INFO 14160 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:23:27.610+08:00  INFO 14160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:23:27.611+08:00  INFO 14160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1494 ms
+2024-08-05T10:23:28.306+08:00  INFO 14160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:23:28.316+08:00  INFO 14160 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.777 seconds (process running for 3.2)
+2024-08-05T10:23:34.689+08:00  INFO 14160 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:23:34.689+08:00  INFO 14160 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:23:34.691+08:00  INFO 14160 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-05T10:23:35.198+08:00  INFO 14160 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:23:35.365+08:00  INFO 14160 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7041f669
+2024-08-05T10:23:35.367+08:00  INFO 14160 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:23:50.216+08:00  INFO 14160 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:23:50.224+08:00  INFO 14160 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:23:54.871+08:00  INFO 3580 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 3580 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:23:54.875+08:00  INFO 3580 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:23:56.265+08:00  INFO 3580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:23:56.276+08:00  INFO 3580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:23:56.277+08:00  INFO 3580 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:23:56.372+08:00  INFO 3580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:23:56.373+08:00  INFO 3580 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1438 ms
+2024-08-05T10:23:57.044+08:00  INFO 3580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:23:57.055+08:00  INFO 3580 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.707 seconds (process running for 3.128)
+2024-08-05T10:24:02.212+08:00  INFO 3580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:24:02.213+08:00  INFO 3580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:24:02.215+08:00  INFO 3580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T10:24:02.835+08:00  INFO 3580 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:24:03.043+08:00  INFO 3580 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c4faecc
+2024-08-05T10:24:03.048+08:00  INFO 3580 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:32:40.997+08:00  INFO 3580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:32:41.006+08:00  INFO 3580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:32:52.551+08:00  INFO 11760 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 11760 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:32:52.554+08:00  INFO 11760 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:32:53.974+08:00  INFO 11760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:32:53.989+08:00  INFO 11760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:32:53.990+08:00  INFO 11760 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:32:54.080+08:00  INFO 11760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:32:54.081+08:00  INFO 11760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1473 ms
+2024-08-05T10:32:54.823+08:00  INFO 11760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:32:54.836+08:00  INFO 11760 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.769 seconds (process running for 3.194)
+2024-08-05T10:33:05.033+08:00  INFO 11760 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:33:05.034+08:00  INFO 11760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:33:05.035+08:00  INFO 11760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T10:33:05.717+08:00  INFO 11760 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:33:05.894+08:00  INFO 11760 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c4faecc
+2024-08-05T10:33:05.898+08:00  INFO 11760 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:37:22.476+08:00  INFO 11760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:37:22.486+08:00  INFO 11760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:37:33.302+08:00  INFO 6660 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 6660 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:37:33.304+08:00  INFO 6660 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:37:34.956+08:00  INFO 6660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:37:34.982+08:00  INFO 6660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:37:34.982+08:00  INFO 6660 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:37:35.076+08:00  INFO 6660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:37:35.076+08:00  INFO 6660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1707 ms
+2024-08-05T10:37:37.109+08:00  INFO 6660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:37:37.147+08:00  INFO 6660 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 4.471 seconds (process running for 4.948)
+2024-08-05T10:38:14.513+08:00  INFO 6660 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:38:14.515+08:00  INFO 6660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:38:14.520+08:00  INFO 6660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-08-05T10:38:14.731+08:00  INFO 6660 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:38:15.294+08:00  INFO 6660 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@442764d5
+2024-08-05T10:38:15.301+08:00  INFO 6660 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:44:36.815+08:00  INFO 6660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:44:36.827+08:00  INFO 6660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:44:41.448+08:00  INFO 15452 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 15452 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:44:41.451+08:00  INFO 15452 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:44:42.798+08:00  INFO 15452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:44:42.809+08:00  INFO 15452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:44:42.810+08:00  INFO 15452 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:44:42.903+08:00  INFO 15452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:44:42.904+08:00  INFO 15452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1396 ms
+2024-08-05T10:44:43.562+08:00  INFO 15452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:44:43.574+08:00  INFO 15452 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.587 seconds (process running for 3.004)
+2024-08-05T10:45:01.217+08:00  INFO 15452 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:45:01.217+08:00  INFO 15452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:45:01.219+08:00  INFO 15452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-05T10:45:01.739+08:00  INFO 15452 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:45:01.926+08:00  INFO 15452 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a004f25
+2024-08-05T10:45:01.928+08:00  INFO 15452 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:46:32.794+08:00  INFO 15452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:46:32.801+08:00  INFO 15452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:46:37.320+08:00  INFO 16228 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 16228 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:46:37.323+08:00  INFO 16228 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:46:38.754+08:00  INFO 16228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:46:38.769+08:00  INFO 16228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:46:38.769+08:00  INFO 16228 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:46:38.894+08:00  INFO 16228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:46:38.894+08:00  INFO 16228 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1515 ms
+2024-08-05T10:46:39.712+08:00  INFO 16228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:46:39.724+08:00  INFO 16228 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.905 seconds (process running for 3.329)
+2024-08-05T10:46:45.827+08:00  INFO 16228 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:46:45.827+08:00  INFO 16228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:46:45.828+08:00  INFO 16228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T10:46:46.347+08:00  INFO 16228 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:46:46.554+08:00  INFO 16228 --- [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a004f25
+2024-08-05T10:46:46.557+08:00  INFO 16228 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:52:43.830+08:00  INFO 16228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:52:43.838+08:00  INFO 16228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:52:48.606+08:00  INFO 10480 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 10480 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:52:48.608+08:00  INFO 10480 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:52:50.127+08:00  INFO 10480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:52:50.140+08:00  INFO 10480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:52:50.141+08:00  INFO 10480 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:52:50.246+08:00  INFO 10480 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:52:50.247+08:00  INFO 10480 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1579 ms
+2024-08-05T10:52:50.900+08:00  INFO 10480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:52:50.909+08:00  INFO 10480 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.885 seconds (process running for 3.329)
+2024-08-05T10:52:59.197+08:00  INFO 10480 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:52:59.198+08:00  INFO 10480 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:52:59.201+08:00  INFO 10480 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-05T10:52:59.687+08:00  INFO 10480 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:52:59.871+08:00  INFO 10480 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@600df168
+2024-08-05T10:52:59.874+08:00  INFO 10480 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:55:11.497+08:00  INFO 3468 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 3468 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:55:11.499+08:00  INFO 3468 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:55:13.233+08:00  INFO 3468 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 2.106 seconds (process running for 3.349)
+2024-08-05T10:55:14.307+08:00  INFO 3468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:55:14.497+08:00  INFO 3468 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f581211
+2024-08-05T10:55:14.500+08:00  INFO 3468 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:55:14.655+08:00  INFO 3468 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:55:14.667+08:00  INFO 3468 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:56:49.301+08:00  INFO 2920 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 2920 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:56:49.303+08:00  INFO 2920 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:56:50.989+08:00  INFO 2920 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 2.074 seconds (process running for 3.192)
+2024-08-05T10:56:51.906+08:00  INFO 2920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:56:52.070+08:00  INFO 2920 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51813065
+2024-08-05T10:56:52.084+08:00  INFO 2920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:56:52.190+08:00  INFO 2920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:56:52.198+08:00  INFO 2920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:57:22.937+08:00  INFO 3628 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Starting BlogInfoMapperTest using Java 17.0.11 with PID 3628 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:57:22.939+08:00  INFO 3628 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:57:24.700+08:00  INFO 3628 --- [main] c.e.demo.mapper.BlogInfoMapperTest       : Started BlogInfoMapperTest in 2.101 seconds (process running for 3.262)
+2024-08-05T10:57:25.726+08:00  INFO 3628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:57:25.923+08:00  INFO 3628 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70777a65
+2024-08-05T10:57:25.926+08:00  INFO 3628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T10:57:25.993+08:00  INFO 3628 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:57:26.001+08:00  INFO 3628 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:58:18.677+08:00  INFO 10480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T10:58:18.686+08:00  INFO 10480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T10:58:22.867+08:00  INFO 8844 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 8844 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T10:58:22.870+08:00  INFO 8844 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T10:58:24.273+08:00  INFO 8844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T10:58:24.296+08:00  INFO 8844 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T10:58:24.297+08:00  INFO 8844 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T10:58:24.444+08:00  INFO 8844 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T10:58:24.445+08:00  INFO 8844 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1517 ms
+2024-08-05T10:58:25.144+08:00  INFO 8844 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T10:58:25.156+08:00  INFO 8844 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.812 seconds (process running for 3.265)
+2024-08-05T10:58:38.594+08:00  INFO 8844 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T10:58:38.595+08:00  INFO 8844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T10:58:38.599+08:00  INFO 8844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-05T10:58:39.192+08:00  INFO 8844 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T10:58:39.730+08:00  INFO 8844 --- [http-nio-8080-exec-4] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24e35088
+2024-08-05T10:58:39.737+08:00  INFO 8844 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T11:00:48.997+08:00  INFO 8844 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T11:00:49.012+08:00  INFO 8844 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T11:00:53.677+08:00  INFO 6504 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 6504 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:00:53.681+08:00  INFO 6504 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:00:55.096+08:00  INFO 6504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T11:00:55.116+08:00  INFO 6504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T11:00:55.116+08:00  INFO 6504 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T11:00:55.197+08:00  INFO 6504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T11:00:55.198+08:00  INFO 6504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1461 ms
+2024-08-05T11:00:55.916+08:00  INFO 6504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T11:00:55.928+08:00  INFO 6504 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.788 seconds (process running for 3.181)
+2024-08-05T11:01:01.806+08:00  INFO 6504 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T11:01:01.806+08:00  INFO 6504 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T11:01:01.808+08:00  INFO 6504 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-05T11:01:06.646+08:00  INFO 6504 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T11:01:07.147+08:00  INFO 6504 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e2589ff
+2024-08-05T11:01:07.152+08:00  INFO 6504 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T11:05:06.954+08:00  INFO 6504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T11:05:06.963+08:00  INFO 6504 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T11:05:16.768+08:00  INFO 8672 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 8672 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:05:16.772+08:00  INFO 8672 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:05:18.191+08:00  INFO 8672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-05T11:05:18.210+08:00  INFO 8672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T11:05:18.210+08:00  INFO 8672 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T11:05:18.318+08:00  INFO 8672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T11:05:18.319+08:00  INFO 8672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1488 ms
+2024-08-05T11:05:18.987+08:00  INFO 8672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-05T11:05:18.998+08:00  INFO 8672 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.765 seconds (process running for 3.191)
+2024-08-05T11:05:23.162+08:00  INFO 8672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T11:05:23.163+08:00  INFO 8672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T11:05:23.165+08:00  INFO 8672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-05T11:05:23.694+08:00  INFO 8672 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T11:05:23.878+08:00  INFO 8672 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8b1574d
+2024-08-05T11:05:23.880+08:00  INFO 8672 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T11:47:04.164+08:00  INFO 20400 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 20400 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:47:04.166+08:00  INFO 20400 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:47:05.561+08:00  INFO 20400 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.675 seconds (process running for 2.543)
+2024-08-05T11:47:44.185+08:00  INFO 20428 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 20428 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:47:44.187+08:00  INFO 20428 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:47:45.440+08:00  INFO 20428 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.503 seconds (process running for 2.41)
+2024-08-05T11:48:05.541+08:00  INFO 11784 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 11784 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:48:05.543+08:00  INFO 11784 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:48:07.071+08:00  INFO 11784 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.793 seconds (process running for 2.68)
+2024-08-05T11:49:34.098+08:00  INFO 19412 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 19412 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:49:34.099+08:00  INFO 19412 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:49:35.514+08:00  INFO 19412 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.748 seconds (process running for 2.735)
+2024-08-05T11:53:15.186+08:00  INFO 12676 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 12676 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:53:15.187+08:00  INFO 12676 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:53:16.589+08:00  INFO 12676 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.669 seconds (process running for 2.669)
+2024-08-05T11:56:00.408+08:00  INFO 20132 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 20132 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:56:00.410+08:00  INFO 20132 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:56:01.708+08:00  INFO 20132 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.572 seconds (process running for 2.414)
+2024-08-05T11:57:39.569+08:00  INFO 11020 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 11020 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:57:39.570+08:00  INFO 11020 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:57:40.904+08:00  INFO 11020 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.607 seconds (process running for 2.486)
+2024-08-05T11:57:54.532+08:00  INFO 7316 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 7316 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:57:54.534+08:00  INFO 7316 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:57:55.916+08:00  INFO 7316 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.664 seconds (process running for 2.615)
+2024-08-05T11:58:18.995+08:00  INFO 19044 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 19044 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:58:18.996+08:00  INFO 19044 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:58:20.305+08:00  INFO 19044 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.57 seconds (process running for 2.47)
+2024-08-05T11:58:42.646+08:00  INFO 9648 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 9648 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:58:42.648+08:00  INFO 9648 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:58:43.973+08:00  INFO 9648 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.617 seconds (process running for 2.54)
+2024-08-05T11:59:30.017+08:00  INFO 9084 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 9084 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:59:30.019+08:00  INFO 9084 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:59:31.369+08:00  INFO 9084 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.617 seconds (process running for 2.523)
+2024-08-05T11:59:58.061+08:00  INFO 1432 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Starting JWTUtilsTest using Java 17.0.11 with PID 1432 (started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-05T11:59:58.062+08:00  INFO 1432 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T11:59:59.421+08:00  INFO 1432 --- [main] com.example.demo.jwtutils.JWTUtilsTest   : Started JWTUtilsTest in 1.623 seconds (process running for 2.511)
+2024-08-05T13:34:02.248+08:00  WARN 8672 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h20m54s409ms951µs700ns).
+2024-08-05T15:13:32.478+08:00  WARN 8672 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m27s247ms410µs).
