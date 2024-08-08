@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.constant.Constants;
 import com.example.demo.jwt.JWTUtils;
 import com.example.demo.model.Result;
 import com.example.demo.model.UserInfo;
@@ -46,7 +47,38 @@ public class UserController {
         String token = JWTUtils.genJwt(claims);
         System.out.println("生成token"+token);
         return Result.success(token);
+    }
 
+    /*
+    *
+    * 在博客列表页，获取当前登录用户的用户信息
+    *
+    * */
+    @RequestMapping("/getUserInfo")
 
+    public UserInfo getUserInfo(HttpServletRequest request){
+        //从header中获取token
+        String token = request.getHeader(Constants.REQUEST_USER_TOKEN);
+        //从token中获取用户id
+        Integer userId = JWTUtils.getUserIdFromToken(token);
+        //根据userId 获取用户信息
+        if(userId != null){
+            return userService.selectById(userId);
+        }
+        return null;
+    }
+
+    /*
+     *
+     * 在博客详情页，获取当前登录文章作者的用户信息
+     *
+     * */
+    @RequestMapping("/getAuthorInfo")
+    public Result getAuthorInfo(Integer blogId){
+        if(blogId == null && blogId < 0){
+            return Result.fail(-1,"博客Id不正确");
+        }
+        UserInfo userInfo = userService.getUserInfoByBlogId(blogId);
+        return Result.success(userInfo);
     }
 }

@@ -39,8 +39,10 @@
         </div>
     </div>
     <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
     <script>
         function login() {
+            console.log("1111");
             $.ajax({
                 type:"post",
                 url:"/user/login",
@@ -49,8 +51,10 @@
                     "password":$("#password").val(),
                 },
                 success:function(result){
+                    console.log(result);
                     if(result.code == 200 && result.data != ""){
                         //将token存入客户端
+                        console.log("2222");
                         localStorage.setItem("user_token",result.data);
                         location.assign("blog_list.html");
                     }else{
@@ -58,6 +62,7 @@
                         //return result.msg;;
                     }
                 }
+                
             });
         }
     </script>
