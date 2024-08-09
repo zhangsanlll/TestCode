@@ -42,7 +42,7 @@
     <script src="js/common.js"></script>
     <script>
         function login() {
-            console.log("1111");
+            //console.log("1111");
             $.ajax({
                 type:"post",
                 url:"/user/login",
@@ -54,16 +54,17 @@
                     console.log(result);
                     if(result.code == 200 && result.data != ""){
                         //将token存入客户端
-                        console.log("2222");
+                        //console.log("2222");
                         localStorage.setItem("user_token",result.data);
+                        //console.log("已经存储了"+result.data);
                         location.assign("blog_list.html");
                     }else{
                         alert("用户或密码错误");
                         //return result.msg;;
                     }
                 }
-                
             });
+            //console.log("2222");
         }
     </script>
 </body>

@@ -42,7 +42,9 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
+    
     <script>
+        getUserInfo("/user/getUserInfo");
         $.ajax({
             type:"get",
             url:"/blog/getList",
@@ -69,7 +71,7 @@
                 if(error != null && error.status == 401){
                     alert("用户未登录，即将跳转到登录页！");
                     //已经被拦截器拦截，未登录
-                    location.href = "/index.html";
+                    location.href = "/blog_login.html";
                 }
             }
         });

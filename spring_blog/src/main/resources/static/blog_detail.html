@@ -42,11 +42,11 @@
             <div class="content">
                 <div class="title"></div>
                 <div class="date"></div>
-                <div class="detail"></div>
-                <div class="operating">
+                <div class="detail" id = "detail" style="background-color: transparent;"></div>
+                <!-- <div class="operating">
                     <button onclick="window.location.href='blog_update.html'">编辑</button>
                     <button onclick="deleteBlog()">删除</button>
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -59,8 +59,10 @@
     <script src="blog-editormd/lib/prettify.min.js"></script>
     <script src="blog-editormd/editormd.js"></script>
     <script src="js/common.js"></script>
+    
     <script>
-        
+        var userUrl = "/user/getAuthorInfo"+location.search;
+        getUserInfo(userUrl);
         $.ajax({
             type:"get",
             url:"/blog/getBlogDetails"+location.search,
@@ -69,8 +71,18 @@
                 if(result.code == 200 && result.data != null){
                     $(".title").text(result.data.title);
                     $(".date").text(result.data.createTime);
-                    $(".detail").text(result.data.content);
-
+                    //$(".detail").text(result.data.content);
+                    editormd.markdownToHTML("detail",{
+                        markdown:result.data.content,
+                    });
+                }
+                if(result.data.loginUser == 1){
+                    var html = "";
+                    html +='<div class="operating">' ;
+                    html +='<button onclick="window.location.href=\'blog_update.html'+location.search+'\">编辑</button>' ;
+                    html +='<button onclick="deleteBlog()">删除</button>' ;
+                    html +=' </div>';
+                    $(".content").append(html);
                 }
             },
             error :function(error){
@@ -78,13 +90,25 @@
                 if(error != null && error.status == 401){
                     alert("用户未登录，即将跳转到登录页！");
                     //已经被拦截器拦截，未登录
-                    location.href = "/index.html";
+                    location.href = "/blog_login.html";
                 }
             }
         });
-
+        
         function deleteBlog() {
-            alert("删除博客");
+            $.ajax({
+                type:"post",
+                url:"/blog/delete"+location.search,
+                success:function(result){
+                    if(result != null && result.code == 200 && result.data){
+                        alert("删除成功，即将跳转至博客列表页");
+                        location.href = "blog_list.html";
+                    }else{
+                        alert("删除失败");
+                    }
+                }
+            });
+            
         }
     </script>
 </body>

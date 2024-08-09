@@ -21,4 +21,11 @@ public class BlogService {
     public BlogInfo getBlogDetails(Integer BlogId) {
         return blogInfoMapper.selectById(BlogId);
     }
+
+    public int insertBlog(BlogInfo blogInfo) {
+        return blogInfoMapper.insertBlog(blogInfo);
+    }
+
+    public void updateBlog(BlogInfo blogInfo) {
+    }
 }

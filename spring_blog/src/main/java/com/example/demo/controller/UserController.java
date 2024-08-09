@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.constant.Constants;
 import com.example.demo.jwt.JWTUtils;
+import com.example.demo.jwt.SecurityUtil;
 import com.example.demo.model.Result;
 import com.example.demo.model.UserInfo;
 import com.example.demo.service.UserService;
@@ -36,7 +37,7 @@ public class UserController {
         }
         //判断密码是否正确
         UserInfo userInfo = userService.getUserInfo(username);
-        if(userInfo == null || ! password.equals(userInfo.getPassword())){
+        if(userInfo == null || ! SecurityUtil.verify(password,userInfo.getPassword())){
             return Result.fail(-1,"用户或密码错误");
         }
         //登录成功，返回token给客户端

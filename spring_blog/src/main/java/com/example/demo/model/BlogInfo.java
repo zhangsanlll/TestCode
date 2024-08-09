@@ -13,7 +13,7 @@ public class BlogInfo {
     private Integer userId;
     private Integer deleteFlag;
     private Date createTime;
-    private Date updateTime;
+    private Integer loginUser;
 
     public String getCreateTime() {
         return DateUtils.format(createTime);
