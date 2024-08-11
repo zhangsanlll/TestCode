@@ -60,8 +60,10 @@ public class UserController {
     public UserInfo getUserInfo(HttpServletRequest request){
         //从header中获取token
         String token = request.getHeader(Constants.REQUEST_USER_TOKEN);
+        log.info("token:{}",token);
         //从token中获取用户id
         Integer userId = JWTUtils.getUserIdFromToken(token);
+        log.info("userId:{}",userId);
         //根据userId 获取用户信息
         if(userId != null){
             return userService.selectById(userId);
