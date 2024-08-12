@@ -46,6 +46,7 @@ public class UserController {
         claims.put("id",userInfo.getId());
         claims.put("username",userInfo.getUserName());
         String token = JWTUtils.genJwt(claims);
+
         System.out.println("生成token"+token);
         return Result.success(token);
     }
@@ -63,10 +64,12 @@ public class UserController {
         log.info("token:{}",token);
         //从token中获取用户id
         Integer userId = JWTUtils.getUserIdFromToken(token);
-        log.info("userId:{}",userId);
+        log.info("当前用户userId:{}",userId);
         //根据userId 获取用户信息
         if(userId != null){
-            return userService.selectById(userId);
+            UserInfo userinfo = userService.selectById(userId);
+            log.info("打印UserInfo:{}"+userinfo);
+            return userinfo;
         }
         return null;
 
@@ -79,10 +82,12 @@ public class UserController {
      * */
     @RequestMapping("/getAuthorInfo")
     public Result getAuthorInfo(Integer blogId){
+         log.info("走到这里");
         if(blogId == null && blogId < 0){
             return Result.fail(-1,"博客Id不正确");
         }
         UserInfo userInfo = userService.getUserInfoByBlogId(blogId);
+        log.info("打印{}",userInfo);
         return Result.success(userInfo);
     }
 }

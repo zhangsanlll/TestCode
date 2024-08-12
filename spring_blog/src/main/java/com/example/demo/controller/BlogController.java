@@ -6,6 +6,7 @@ import com.example.demo.model.BlogInfo;
 import com.example.demo.model.Result;
 import com.example.demo.service.BlogService;
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+
+@Slf4j
 
 @RestController
 @RequestMapping("/blog")
@@ -70,8 +73,12 @@ public class BlogController {
 
     @RequestMapping("/update")
     public Result update(@RequestBody BlogInfo blogInfo){
-        blogService.updateBlog(blogInfo);
-        return Result.success(true);
+        int result = blogService.updateBlog(blogInfo);
+        log.info("result:{}",result);
+        if( result == 1){
+            return Result.success(true);
+        }
+        return Result.fail(-1,"未编辑成功");
     }
 
     @RequestMapping("/delete")

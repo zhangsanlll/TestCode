@@ -23,9 +23,11 @@ public class BlogService {
     }
 
     public int insertBlog(BlogInfo blogInfo) {
+
         return blogInfoMapper.insertBlog(blogInfo);
     }
 
-    public void updateBlog(BlogInfo blogInfo) {
+    public int updateBlog(BlogInfo blogInfo) {
+        return blogInfoMapper.updateBlog(blogInfo);
     }
 }

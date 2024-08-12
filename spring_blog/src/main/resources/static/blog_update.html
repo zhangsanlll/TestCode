@@ -50,16 +50,16 @@
         function submit() {
            $.ajax({
             type:"post",
-            url:"/blog/update",
+            url:"/blog/update"+location.search,
             contentType:"application/json",
             data:JSON.stringify({
                 "title":$("#title").val(),
                 "content":$("#content").val(),
-                "id":$("#blogOd").val()
+                "id":$("#blogId").val()
             }),
             success:function(result){
                 if(result != null && result.code == 200 && result.data == true){
-                    location.href = "/blog_list.html";
+                    location.href = "blog_list.html";
                 }else{
                     alert(result.msg);
                 }

@@ -4,6 +4,7 @@ import com.example.demo.model.BlogInfo;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -20,6 +21,7 @@ public interface BlogInfoMapper {
 
     //根据博客id修改博客信息（包括删除，将deleteFlag改为1）
     //使用xml写
+
     int updateBlog(BlogInfo blogInfo);
 
     //插入新的博客

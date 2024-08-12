@@ -5,6 +5,7 @@ $(document).ajaxSend(function (e,xhr,opt){
     xhr.setRequestHeader("user_token",user_token);
 });
 
+
 function getUserInfo(userUrl){
     console.log("aaa");
     $.ajax({
@@ -13,8 +14,9 @@ function getUserInfo(userUrl){
         success:function(result){
             if(result.code == 200 && result.data != null){
                 console.log("bbb");
-                $(".left.card h3").text(result.data.userName);
-                $(".left.card a").attr("href",result.data.githubUrl);
+                $(".left .card h3").text(result.data.userName);
+                $(".left .card a").attr("href",result.data.githubUrl);
+                console.log(result.data.githubUrl);
             }
         },
         error:function( ){
@@ -27,4 +29,5 @@ function getUserInfo(userUrl){
         localStorage.removeItem("user_token");
         location.href = "/blog_login.html";
     }
+
 
