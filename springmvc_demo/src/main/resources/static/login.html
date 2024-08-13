@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>登录页面</title>
+</head>
+
+<body>
+<h1>用户登录</h1>
+用户名：<input name="userName" type="text" id="userName"><br>
+密码：<input name="passWord" type="passWord" id="passWord"><br>
+<?--登录界面点击登录跳转到login()界面，获取账号和密码的值，并判断账号和密码是否正确-->
+<input type="button" value="登录" onclick="login()">
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+//回调函数
+    function login() {
+    $.ajax({
+    url:"user/login",
+    type:"post",
+    data:{
+         userName:$("#userName").val(),
+         passWord:$("#passWord").val()
+    },
+     //http响应成功
+     success:function(result){
+     if(result == true){
+     //页面跳转
+        location.href = "index.html";
+        }else{
+        alert("账号或者密码有误！");
+        }
+       }
+    });
+    }
+  </script>
+</body>
+
+</html>
