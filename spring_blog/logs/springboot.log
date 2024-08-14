@@ -155,3 +155,5 @@
 2024-08-13T22:31:26.655+08:00  INFO 9636 --- [http-nio-8080-exec-2] c.e.demo.controller.UserController       : 打印UserInfo(id=2, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=lisi, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
 2024-08-13T22:31:33.009+08:00  INFO 9636 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
 2024-08-13T22:31:33.009+08:00  INFO 9636 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
+2024-08-13T22:56:23.402+08:00  INFO 9636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-13T22:56:23.408+08:00  INFO 9636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
