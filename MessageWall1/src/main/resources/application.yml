@@ -1,0 +1,11 @@
+spring.application.name=MessageWall1
+---
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/mybatis_test?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 1111
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  configuration: # ???? MyBatis ??? SQL
+    map-underscore-to-camel-case: true  #??????
