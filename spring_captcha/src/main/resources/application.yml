@@ -1,0 +1,23 @@
+spring.application.name=spring_captcha
+---
+captcha:
+  width: 200
+  height: 100
+  codeCount: 4
+  thickness: 4
+  session:
+    key: CAPTCHA_SESSION_KEY
+    date: CAPTCHA_SESSION_DATE
+
+---
+logging:
+  level:
+    root: debug
+  file:
+   # name: logger/springboot.log
+   # path: D:/log
+
+  logback:
+    rollingpolicy:
+      max-file-size: 1KB
+      file-name-pattern: ${LOG_FILE}.%d{yyyy-MM-dd}.%i
