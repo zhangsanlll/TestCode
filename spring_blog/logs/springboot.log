@@ -1,159 +1,18 @@
-2024-08-13T22:26:58.192+08:00  INFO 1984 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 1984 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-13T22:26:58.199+08:00  INFO 1984 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-08-13T22:26:59.646+08:00  INFO 1984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-13T22:26:59.664+08:00  INFO 1984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-13T22:26:59.665+08:00  INFO 1984 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-13T22:26:59.738+08:00  INFO 1984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-13T22:26:59.739+08:00  INFO 1984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1493 ms
-2024-08-13T22:27:00.472+08:00  INFO 1984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-13T22:27:00.482+08:00  INFO 1984 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.755 seconds (process running for 3.331)
-2024-08-13T22:27:14.313+08:00  INFO 1984 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-13T22:27:14.313+08:00  INFO 1984 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-13T22:27:14.315+08:00  INFO 1984 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-08-13T22:27:14.840+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:14.851+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:20.517+08:00  INFO 1984 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-13T22:27:20.691+08:00  INFO 1984 --- [http-nio-8080-exec-9] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34e0b6
-2024-08-13T22:27:20.693+08:00  INFO 1984 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-13T22:27:21.023+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:21.023+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:21.169+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:21.171+08:00  INFO 1984 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:21.199+08:00  INFO 1984 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:21.199+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:21.199+08:00  INFO 1984 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:21.199+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:21.199+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.controller.UserController       : token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:21.202+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.controller.UserController       : 当前用户userId:1
-2024-08-13T22:27:21.211+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.controller.UserController       : 打印UserInfo:{}UserInfo(id=1, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=zhangsan, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:27:30.681+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:30.684+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:30.684+08:00  INFO 1984 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:30.684+08:00  INFO 1984 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:30.685+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:30.686+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:30.687+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.controller.UserController       : 走到这里
-2024-08-13T22:27:30.687+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:30.687+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:30.694+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.controller.UserController       : 打印UserInfo(id=1, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=zhangsan, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:27:33.073+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:33.074+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:36.543+08:00  INFO 1984 --- [http-nio-8080-exec-6] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:36.543+08:00  INFO 1984 --- [http-nio-8080-exec-6] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:36.691+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:36.693+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:36.693+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:36.694+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.controller.UserController       : 走到这里
-2024-08-13T22:27:36.695+08:00  INFO 1984 --- [http-nio-8080-exec-10] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:36.697+08:00  INFO 1984 --- [http-nio-8080-exec-10] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:36.697+08:00  INFO 1984 --- [http-nio-8080-exec-10] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:36.699+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.controller.UserController       : 打印UserInfo(id=1, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=zhangsan, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:27:40.903+08:00  INFO 1984 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:40.904+08:00  INFO 1984 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:42.581+08:00  INFO 1984 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:42.581+08:00  INFO 1984 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:42.742+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:42.742+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:42.744+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:42.744+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:42.744+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:42.745+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:42.745+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.controller.UserController       : 走到这里
-2024-08-13T22:27:42.750+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.controller.UserController       : 打印UserInfo(id=1, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=zhangsan, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:27:44.529+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:44.529+08:00  INFO 1984 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:46.498+08:00  INFO 1984 --- [http-nio-8080-exec-6] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:46.499+08:00  INFO 1984 --- [http-nio-8080-exec-6] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:46.693+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:46.698+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:46.699+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:46.699+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.controller.UserController       : 走到这里
-2024-08-13T22:27:46.703+08:00  INFO 1984 --- [http-nio-8080-exec-10] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:46.705+08:00  INFO 1984 --- [http-nio-8080-exec-8] c.e.demo.controller.UserController       : 打印UserInfo(id=2, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=lisi, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:27:46.706+08:00  INFO 1984 --- [http-nio-8080-exec-10] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:46.706+08:00  INFO 1984 --- [http-nio-8080-exec-10] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:48.605+08:00  INFO 1984 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:48.605+08:00  INFO 1984 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:50.042+08:00  INFO 1984 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:27:50.042+08:00  INFO 1984 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:27:50.200+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:50.201+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:27:50.203+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:50.204+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:50.204+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:27:50.204+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.controller.UserController       : 走到这里
-2024-08-13T22:27:50.204+08:00  INFO 1984 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:27:50.213+08:00  INFO 1984 --- [http-nio-8080-exec-2] c.e.demo.controller.UserController       : 打印UserInfo(id=2, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=lisi, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:29:55.747+08:00  INFO 1984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-13T22:29:55.757+08:00  INFO 1984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-08-13T22:29:58.185+08:00  INFO 9636 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 9636 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
-2024-08-13T22:29:58.188+08:00  INFO 9636 --- [main] com.example.demo.SpringBlogApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-08-13T22:29:59.360+08:00  INFO 9636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-08-13T22:29:59.369+08:00  INFO 9636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-13T22:29:59.370+08:00  INFO 9636 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-13T22:29:59.451+08:00  INFO 9636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-13T22:29:59.452+08:00  INFO 9636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1212 ms
-2024-08-13T22:30:00.011+08:00  INFO 9636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-08-13T22:30:00.023+08:00  INFO 9636 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.304 seconds (process running for 2.692)
-2024-08-13T22:30:03.547+08:00  INFO 9636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-13T22:30:03.548+08:00  INFO 9636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-13T22:30:03.549+08:00  INFO 9636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-08-13T22:30:03.568+08:00  INFO 9636 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:30:03.574+08:00  INFO 9636 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:30:05.121+08:00  INFO 9636 --- [http-nio-8080-exec-3] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:30:05.121+08:00  INFO 9636 --- [http-nio-8080-exec-3] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:30:05.285+08:00  INFO 9636 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:30:05.285+08:00  INFO 9636 --- [http-nio-8080-exec-5] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:30:05.348+08:00  INFO 9636 --- [http-nio-8080-exec-5] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:30:05.348+08:00  INFO 9636 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=1, username=zhangsan, iat=1723559240, exp=1723561040}
-2024-08-13T22:30:05.348+08:00  INFO 9636 --- [http-nio-8080-exec-5] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:30:05.348+08:00  INFO 9636 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:30:05.363+08:00  INFO 9636 --- [http-nio-8080-exec-4] c.e.demo.controller.UserController       : token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ6aGFuZ3NhbiIsImlhdCI6MTcyMzU1OTI0MCwiZXhwIjoxNzIzNTYxMDQwfQ.lONCT4-rwbF_MPYU_suZmAJ10mWzPUuaouwa4ROoazY
-2024-08-13T22:30:05.368+08:00  INFO 9636 --- [http-nio-8080-exec-4] c.e.demo.controller.UserController       : 当前用户userId:1
-2024-08-13T22:30:05.377+08:00  INFO 9636 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-13T22:30:05.488+08:00  INFO 9636 --- [http-nio-8080-exec-5] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@742ecbe5
-2024-08-13T22:30:05.489+08:00  INFO 9636 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-13T22:30:05.559+08:00  INFO 9636 --- [http-nio-8080-exec-4] c.e.demo.controller.UserController       : 打印UserInfo:{}UserInfo(id=1, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=zhangsan, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:30:13.409+08:00  INFO 9636 --- [http-nio-8080-exec-6] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:30:13.409+08:00  INFO 9636 --- [http-nio-8080-exec-6] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:30:18.054+08:00  INFO 9636 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:30:18.054+08:00  INFO 9636 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:30:18.225+08:00  INFO 9636 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJsaXNpIiwiaWF0IjoxNzIzNTU5NDE3LCJleHAiOjE3MjM1NjEyMTd9.gjZY5e9bG09aL7tc5AfOtuFFwelluPj73R1RB4T8Yg4
-2024-08-13T22:30:18.225+08:00  INFO 9636 --- [http-nio-8080-exec-10] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJsaXNpIiwiaWF0IjoxNzIzNTU5NDE3LCJleHAiOjE3MjM1NjEyMTd9.gjZY5e9bG09aL7tc5AfOtuFFwelluPj73R1RB4T8Yg4
-2024-08-13T22:30:18.228+08:00  INFO 9636 --- [http-nio-8080-exec-10] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=2, username=lisi, iat=1723559417, exp=1723561217}
-2024-08-13T22:30:18.228+08:00  INFO 9636 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=2, username=lisi, iat=1723559417, exp=1723561217}
-2024-08-13T22:30:18.228+08:00  INFO 9636 --- [http-nio-8080-exec-10] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:30:18.228+08:00  INFO 9636 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:30:18.228+08:00  INFO 9636 --- [http-nio-8080-exec-9] c.e.demo.controller.UserController       : token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJsaXNpIiwiaWF0IjoxNzIzNTU5NDE3LCJleHAiOjE3MjM1NjEyMTd9.gjZY5e9bG09aL7tc5AfOtuFFwelluPj73R1RB4T8Yg4
-2024-08-13T22:30:18.231+08:00  INFO 9636 --- [http-nio-8080-exec-9] c.e.demo.controller.UserController       : 当前用户userId:2
-2024-08-13T22:30:18.233+08:00  INFO 9636 --- [http-nio-8080-exec-9] c.e.demo.controller.UserController       : 打印UserInfo:{}UserInfo(id=2, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=lisi, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:30:22.470+08:00  INFO 9636 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:30:22.471+08:00  INFO 9636 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:31:22.599+08:00  INFO 9636 --- [http-nio-8080-exec-6] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJsaXNpIiwiaWF0IjoxNzIzNTU5NDE3LCJleHAiOjE3MjM1NjEyMTd9.gjZY5e9bG09aL7tc5AfOtuFFwelluPj73R1RB4T8Yg4
-2024-08-13T22:31:22.602+08:00  INFO 9636 --- [http-nio-8080-exec-6] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=2, username=lisi, iat=1723559417, exp=1723561217}
-2024-08-13T22:31:22.602+08:00  INFO 9636 --- [http-nio-8080-exec-6] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:31:22.713+08:00  INFO 9636 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:31:22.713+08:00  INFO 9636 --- [http-nio-8080-exec-4] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:31:22.848+08:00  INFO 9636 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJsaXNpIiwiaWF0IjoxNzIzNTU5NDE3LCJleHAiOjE3MjM1NjEyMTd9.gjZY5e9bG09aL7tc5AfOtuFFwelluPj73R1RB4T8Yg4
-2024-08-13T22:31:22.852+08:00  INFO 9636 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=2, username=lisi, iat=1723559417, exp=1723561217}
-2024-08-13T22:31:22.852+08:00  INFO 9636 --- [http-nio-8080-exec-8] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:31:22.852+08:00  INFO 9636 --- [http-nio-8080-exec-8] c.e.demo.controller.UserController       : token:eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJsaXNpIiwiaWF0IjoxNzIzNTU5NDE3LCJleHAiOjE3MjM1NjEyMTd9.gjZY5e9bG09aL7tc5AfOtuFFwelluPj73R1RB4T8Yg4
-2024-08-13T22:31:22.853+08:00  INFO 9636 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJsaXNpIiwiaWF0IjoxNzIzNTU5NDE3LCJleHAiOjE3MjM1NjEyMTd9.gjZY5e9bG09aL7tc5AfOtuFFwelluPj73R1RB4T8Yg4
-2024-08-13T22:31:22.855+08:00  INFO 9636 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=2, username=lisi, iat=1723559417, exp=1723561217}
-2024-08-13T22:31:22.855+08:00  INFO 9636 --- [http-nio-8080-exec-9] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:31:22.855+08:00  INFO 9636 --- [http-nio-8080-exec-8] c.e.demo.controller.UserController       : 当前用户userId:2
-2024-08-13T22:31:22.857+08:00  INFO 9636 --- [http-nio-8080-exec-8] c.e.demo.controller.UserController       : 打印UserInfo:{}UserInfo(id=2, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=lisi, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:31:26.494+08:00  INFO 9636 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:31:26.494+08:00  INFO 9636 --- [http-nio-8080-exec-1] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:31:26.647+08:00  INFO 9636 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJsaXNpIiwiaWF0IjoxNzIzNTU5NDE3LCJleHAiOjE3MjM1NjEyMTd9.gjZY5e9bG09aL7tc5AfOtuFFwelluPj73R1RB4T8Yg4
-2024-08-13T22:31:26.647+08:00  INFO 9636 --- [http-nio-8080-exec-5] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJsaXNpIiwiaWF0IjoxNzIzNTU5NDE3LCJleHAiOjE3MjM1NjEyMTd9.gjZY5e9bG09aL7tc5AfOtuFFwelluPj73R1RB4T8Yg4
-2024-08-13T22:31:26.649+08:00  INFO 9636 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=2, username=lisi, iat=1723559417, exp=1723561217}
-2024-08-13T22:31:26.649+08:00  INFO 9636 --- [http-nio-8080-exec-5] c.e.demo.interceptor.LoginInterceptor    : 获取claims：{id=2, username=lisi, iat=1723559417, exp=1723561217}
-2024-08-13T22:31:26.649+08:00  INFO 9636 --- [http-nio-8080-exec-2] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:31:26.649+08:00  INFO 9636 --- [http-nio-8080-exec-5] c.e.demo.interceptor.LoginInterceptor    : token验证成功，放行
-2024-08-13T22:31:26.650+08:00  INFO 9636 --- [http-nio-8080-exec-2] c.e.demo.controller.UserController       : 走到这里
-2024-08-13T22:31:26.655+08:00  INFO 9636 --- [http-nio-8080-exec-2] c.e.demo.controller.UserController       : 打印UserInfo(id=2, password=d656a5722d1d4a71a63aec52f87ee2c64b5b6cd35da51b42db314e440b78e74c, userName=lisi, githubUrl=https://gitee.com/bubble-fish666/class-java45, deleteFlag=0, createTime=Sun Aug 04 16:33:54 CST 2024, updateTime=null)
-2024-08-13T22:31:33.009+08:00  INFO 9636 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 从header中获取token：null
-2024-08-13T22:31:33.009+08:00  INFO 9636 --- [http-nio-8080-exec-7] c.e.demo.interceptor.LoginInterceptor    : 获取claims：null
-2024-08-13T22:56:23.402+08:00  INFO 9636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-08-13T22:56:23.408+08:00  INFO 9636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-21T16:48:17.403+08:00  INFO 13672 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 13672 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-21T16:48:17.411+08:00  INFO 13672 --- [main] com.example.demo.SpringBlogApplication   : The following 1 profile is active: "dev"
+2024-08-21T16:48:19.428+08:00  INFO 13672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-21T16:48:19.446+08:00  INFO 13672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-21T16:48:19.453+08:00  INFO 13672 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-21T16:48:19.523+08:00  INFO 13672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-21T16:48:19.524+08:00  INFO 13672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2049 ms
+2024-08-21T16:48:20.329+08:00  INFO 13672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-21T16:48:20.341+08:00  INFO 13672 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 3.488 seconds (process running for 3.903)
+2024-08-21T16:58:14.509+08:00  INFO 17280 --- [main] com.example.demo.SpringBlogApplication   : Starting SpringBlogApplication using Java 17.0.11 with PID 17280 (D:\gitte\GitHub_Project\spring_blog\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_blog)
+2024-08-21T16:58:14.513+08:00  INFO 17280 --- [main] com.example.demo.SpringBlogApplication   : The following 1 profile is active: "prod"
+2024-08-21T16:58:15.769+08:00  INFO 17280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-21T16:58:15.785+08:00  INFO 17280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-21T16:58:15.785+08:00  INFO 17280 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-21T16:58:15.872+08:00  INFO 17280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-21T16:58:15.873+08:00  INFO 17280 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1304 ms
+2024-08-21T16:58:16.517+08:00  INFO 17280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-21T16:58:16.526+08:00  INFO 17280 --- [main] com.example.demo.SpringBlogApplication   : Started SpringBlogApplication in 2.596 seconds (process running for 3.103)
