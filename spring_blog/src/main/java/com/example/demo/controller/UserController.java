@@ -37,7 +37,9 @@ public class UserController {
         }
         //判断密码是否正确
         UserInfo userInfo = userService.getUserInfo(username);
-        if(userInfo == null || ! SecurityUtil.verify(password,userInfo.getPassword())){
+        if(userInfo == null || !password.equals(userInfo.getPassword())){
+            log.error("password:{}",password);
+            log.error("userinfo.getPassword:{}",userInfo.getPassword());
             return Result.fail(-1,"用户或密码错误");
         }
         //登录成功，返回token给客户端
@@ -47,7 +49,7 @@ public class UserController {
         claims.put("username",userInfo.getUserName());
         String token = JWTUtils.genJwt(claims);
 
-        System.out.println("生成token"+token);
+       // System.out.println("生成token"+token);
         return Result.success(token);
     }
 
