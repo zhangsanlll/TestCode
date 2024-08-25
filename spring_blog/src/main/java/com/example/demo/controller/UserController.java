@@ -37,7 +37,7 @@ public class UserController {
         }
         //判断密码是否正确
         UserInfo userInfo = userService.getUserInfo(username);
-        if(userInfo == null || !password.equals(userInfo.getPassword())){
+        if(userInfo == null || !SecurityUtil.verify(password,userInfo.getPassword())){
             log.error("password:{}",password);
             log.error("userinfo.getPassword:{}",userInfo.getPassword());
             return Result.fail(-1,"用户或密码错误");

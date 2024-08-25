@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class ExceptionAdvice {
     @ExceptionHandler(Exception.class)
     public Result exceptionAdvice(Exception e){
+        e.printStackTrace();
         return Result.fail(-1,e.getMessage());
     }
 }
