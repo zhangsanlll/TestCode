@@ -1,0 +1,28 @@
+2024-08-22T14:42:16.361+08:00  INFO 12952 --- [main] com.bit.demo.SpringBookApplication       : Starting SpringBookApplication using Java 17.0.11 with PID 12952 (D:\gitte\GitHub_Project\spring_book\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_book)
+2024-08-22T14:42:16.371+08:00  INFO 12952 --- [main] com.bit.demo.SpringBookApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-22T14:42:17.620+08:00  INFO 12952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-22T14:42:17.642+08:00  INFO 12952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-22T14:42:17.643+08:00  INFO 12952 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-22T14:42:17.734+08:00  INFO 12952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-22T14:42:17.734+08:00  INFO 12952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1294 ms
+2024-08-22T14:42:18.588+08:00  INFO 12952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-22T14:42:18.597+08:00  INFO 12952 --- [main] com.bit.demo.SpringBookApplication       : Started SpringBookApplication in 2.766 seconds (process running for 3.38)
+2024-08-22T14:42:47.281+08:00  INFO 12952 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-22T14:42:47.281+08:00  INFO 12952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-22T14:42:47.283+08:00  INFO 12952 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-22T14:42:47.602+08:00  INFO 12952 --- [http-nio-8080-exec-7] c.bit.demo.Interceptor.LoginInterceptor  : 拦截器拦截LoginInterceptor....
+2024-08-22T14:42:47.690+08:00  INFO 12952 --- [http-nio-8080-exec-8] c.bit.demo.Interceptor.LoginInterceptor  : 拦截器拦截LoginInterceptor....
+2024-08-22T14:42:47.906+08:00  INFO 12952 --- [http-nio-8080-exec-2] c.bit.demo.Interceptor.LoginInterceptor  : 拦截器拦截LoginInterceptor....
+2024-08-22T14:44:01.143+08:00  INFO 1912 --- [main] com.bit.demo.SpringBookApplication       : Starting SpringBookApplication using Java 17.0.11 with PID 1912 (D:\gitte\GitHub_Project\spring_book\target\classes started by lenovo in D:\gitte\GitHub_Project\spring_book)
+2024-08-22T14:44:01.146+08:00  INFO 1912 --- [main] com.bit.demo.SpringBookApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-08-22T14:44:02.319+08:00  INFO 1912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-22T14:44:02.331+08:00  INFO 1912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-22T14:44:02.331+08:00  INFO 1912 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-08-22T14:44:02.391+08:00  INFO 1912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-22T14:44:02.392+08:00  INFO 1912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1202 ms
+2024-08-22T14:44:03.027+08:00  INFO 1912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-22T14:44:03.035+08:00  INFO 1912 --- [main] com.bit.demo.SpringBookApplication       : Started SpringBookApplication in 2.317 seconds (process running for 2.721)
+2024-08-22T14:47:19.614+08:00  INFO 1912 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-22T14:47:19.614+08:00  INFO 1912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-22T14:47:19.615+08:00  INFO 1912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-22T14:47:19.726+08:00  INFO 1912 --- [http-nio-8080-exec-2] c.bit.demo.Interceptor.LoginInterceptor  : 拦截器拦截LoginInterceptor....

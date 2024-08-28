@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书列表展示</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/list.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/jq-paginator.js"></script>
+
+</head>
+
+<body>
+<div class="bookContainer">
+    <h2>图书列表展示</h2>
+    <div class="navbar-justify-between">
+        <div>
+            <button class="btn btn-outline-info" type="button" onclick="location.href='book_add.html'">添加图书</button>
+            <button class="btn btn-outline-info" type="button" onclick="deleteAllBook()">批量删除</button>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <td>选择</td>
+            <td class="width100">图书ID</td>
+            <td>书名</td>
+            <td>作者</td>
+            <td>数量</td>
+            <td>定价</td>
+            <td>出版社</td>
+            <td>状态</td>
+            <td class="width200">操作</td>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div class="demo">
+        <ul id="pageContainer" class="pagination justify-content-center"></ul>
+    </div>
+    <script>
+        getBookList();
+        function getBookList() {
+            $.ajax({
+            type: "get",
+            url: "/book/getListByPage" + location.search,
+            success: function (result) {
+                console.log(result);
+                //真实前端代码需要分的更细⼀点, 此处不做判断
+                if (result == null || result.data == null) {
+                    location.href = "login.html";
+                    return;
+                }
+                var finalHtml = "";
+                var data = result.data;
+                for (var book of data.records) {
+                    finalHtml += '<tr>';
+                    finalHtml += '<td><input type="checkbox" name="selectBook" value="' + book.id + '" id= "selectBook" class="book-select"></td>';
+                    finalHtml += '<td>' + book.id + '</td>';
+                    finalHtml += '<td>' + book.bookName + '</td>';
+                    finalHtml += '<td>' + book.author + '</td>';
+                    finalHtml += '<td>' + book.count + '</td>';
+                    finalHtml += '<td>' + book.price + '</td>';
+                    finalHtml += '<td>' + book.publish + '</td>';
+                    finalHtml += '<td>' + book.statusCN + '</td>';
+                    finalHtml += '<td><div class="op">';
+                    finalHtml += '<a href="book_update.html?bookId=' + book.id + '">修改</a>';
+                    finalHtml += '<a href="javascript:void(0)" onclick="deleteBook(' + book.id + ')">删除</a>';
+                    finalHtml += '</div></td>';
+                    finalHtml += "</tr>";
+                }
+                $("tbody").html(finalHtml);
+                $("#pageContainer").jqPaginator({
+                    totalCounts: data.total, //总记录数
+                    pageSize: 10, //每⻚的个数
+                    visiblePages: 5, //可视⻚数
+                    currentPage: data.pageRequest.currentPage, //当前⻚码
+                    first: '<li class="page-item"><a class="page-link">⾸⻚</a></li>',
+                    prev: '<li class="page-item"><a class="page-link"href="javascript:void(0);">上⼀⻚<\/a><\/li>',
+                    next: '<li class="page-item"><a class="page-link" href="javascript:void(0);">下⼀⻚<\/a><\/li>',
+                    last: '<li class="page-item"><a class="page-link" href="javascript:void(0);">最后⼀⻚<\/a><\/li>',
+                    page: '<li class="page-item"><a class="page-link" href="javascript:void(0);">{{page}}<\/a><\/li>',
+                    //⻚⾯初始化和⻚码点击时都会执⾏
+                    onPageChange: function (page, type) {
+                        if (type != 'init') {
+                            location.href = "book_list.html?currentPage=" + page;
+                        }
+                    }
+                });
+            },
+            error:function (error){
+                    if(error != null && error.status == 401){
+                        //用户未登录
+                        location.href = "login.html";
+                    }
+                }
+            });
+        }   
+        function deleteBook(id){
+            var isDelete = confirm("确认删除？");
+            if(isDelete){
+                //删除图书
+                $.ajax({
+                    type:"post",
+                    url:"/book/updateBook",
+                    data:{
+                        id:id,
+                        status:0
+                    },
+                    success:function(){
+                        if(result.status=="SUCCESS" || result.data ==true){
+                             //重新刷新页面
+                        location.href = "book_list.html"+location.search;
+                        }else{
+                            alert(result.data);
+                        }
+                    },
+                    error:function (error){
+                    if(error != null && error.status == 401){
+                        //用户未登录
+                        location.href = "login.html";
+                    }
+                }
+                });
+            }
+            
+        }
+
+        function deleteAllBook(){
+            var isDelete = confirm("确认批量删除？");
+            if(isDelete){
+                //获取复选框中的id
+                var ids = [];
+                $("input:checkbox[name='selectBook']:checked").each(function(){
+                    ids.push($(this).val());
+                });
+                console.log(ids);
+                //批量删除
+                $.ajax({
+                    type:"post",
+                    url:"/book/deleteAllBook?ids="+ids,
+                    success:function(result){
+                        if(result.status=="SUCCESS" || result.data == ""){
+                            alert("删除成功");
+                             //重新刷新页面
+                            location.href = "book_list.html";
+                        }
+                    },
+                    error:function (error){
+                    if(error != null && error.status == 401){
+                        //用户未登录
+                        location.href = "login.html";
+                    }
+                }
+                });
+            }
+        }
+        </script>
+</div>
+</body>
+
+</html>
+
