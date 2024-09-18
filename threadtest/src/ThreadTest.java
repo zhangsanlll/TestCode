@@ -1,3 +1,5 @@
+import java.util.concurrent.BlockingDeque;
+import java.util.concurrent.LinkedBlockingDeque;
 
 public class ThreadTest {
 
@@ -5,6 +7,9 @@ public class ThreadTest {
 
     private static int count = 0;
 
+    public static void main(String[] args) {
+        BlockingDeque<Integer> qeque = new LinkedBlockingDeque();
+    }
 
 
     public static void main7(String[] args) throws InterruptedException {
